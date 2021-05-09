@@ -1,0 +1,5 @@
+query Pagination {
+  _allProductsMeta {
+    count
+  }
+}

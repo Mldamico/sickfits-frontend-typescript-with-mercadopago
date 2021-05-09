@@ -1,0 +1,14 @@
+mutation RedeemPasswordReset(
+  $email: String!
+  $token: String!
+  $password: String!
+) {
+  redeemUserPasswordResetToken(
+    email: $email
+    token: $token
+    password: $password
+  ) {
+    code
+    message
+  }
+}

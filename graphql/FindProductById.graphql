@@ -1,0 +1,12 @@
+query findProductById($id: ID!) {
+  Product(where: { id: $id }) {
+    name
+    description
+    price
+    photo {
+      image {
+        publicUrlTransformed
+      }
+    }
+  }
+}

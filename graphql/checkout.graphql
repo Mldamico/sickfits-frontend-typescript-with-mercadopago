@@ -1,0 +1,15 @@
+mutation checkout($amount: Int!, $id: String!) {
+  checkout(amount: $amount, id: $id) {
+    id
+    label
+    total
+    items {
+      name
+      description
+    }
+    user {
+      name
+    }
+    charge
+  }
+}
